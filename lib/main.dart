@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:nauka_fluttera/pages/counter_page.dart';
 import 'package:nauka_fluttera/pages/first_page.dart';
 import 'package:nauka_fluttera/pages/home_page.dart';
 import 'package:nauka_fluttera/pages/settings_page.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'homePage': (context) => HomePage(),
         'settingsPage': (context) => SettingsPage(),
+        'counterPage': (context) => CounterPage(),
       },
     );
   }

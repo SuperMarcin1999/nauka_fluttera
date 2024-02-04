@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:nauka_fluttera/pages/counter_page.dart';
 import 'package:nauka_fluttera/pages/home_page.dart';
 import 'package:nauka_fluttera/pages/profile_page.dart';
 import 'package:nauka_fluttera/pages/settings_page.dart';
@@ -24,6 +25,7 @@ class _FirstPageState extends State<FirstPage> {
   final _pages = [
     HomePage(),
     ProfilePage(),
+    CounterPage(),
     SettingsPage(),
   ];
 
@@ -69,6 +71,7 @@ class _FirstPageState extends State<FirstPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         currentIndex: _selectedPageIndex,
         onTap: _nagivateBottomBar,
         items: [
@@ -82,6 +85,12 @@ class _FirstPageState extends State<FirstPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: "Profile",
+          ),
+
+          // counter
+          BottomNavigationBarItem(
+            icon: Icon(Icons.numbers),
+            label: "Counter",
           ),
 
           // settings
