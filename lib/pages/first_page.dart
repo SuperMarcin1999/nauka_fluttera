@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:nauka_fluttera/pages/counter_page.dart';
 import 'package:nauka_fluttera/pages/home_page.dart';
-import 'package:nauka_fluttera/pages/profile_page.dart';
+import 'package:nauka_fluttera/pages/todo_page.dart';
 import 'package:nauka_fluttera/pages/settings_page.dart';
 
 class FirstPage extends StatefulWidget {
@@ -24,7 +24,7 @@ class _FirstPageState extends State<FirstPage> {
 
   final _pages = [
     HomePage(),
-    ProfilePage(),
+    ToDoPage(),
     CounterPage(),
     SettingsPage(),
   ];
@@ -83,8 +83,8 @@ class _FirstPageState extends State<FirstPage> {
 
           // profile
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: "Profile",
+            icon: Icon(Icons.task),
+            label: "Todo",
           ),
 
           // counter
